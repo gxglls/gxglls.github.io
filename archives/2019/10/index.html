@@ -20,10 +20,10 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '7.4.2',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -42,18 +42,18 @@
     path: '',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
     },
     sidebarPadding: 40
   };
 </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Miracle Fertilizer&#39;s Blog">
 <meta property="og:url" content="http:&#x2F;&#x2F;www.liwenjing.xn--6qq986b3xl&#x2F;archives&#x2F;2019&#x2F;10&#x2F;index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Miracle Fertilizer&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>Archive | Hexo</title>
+  <title>归档 | Miracle Fertilizer's Blog</title>
   
 
 
@@ -115,14 +115,15 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Miracle Fertilizer's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+        <p class="site-subtitle">李文静男朋友的博客</p>
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -136,12 +137,32 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>日程表</a>
 
   </li>
   </ul>
@@ -171,13 +192,33 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">Um..! 1 post. Keep on posting.</span>
+        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
       </div>
 
       
     <div class="collection-year">
       <h1 class="collection-header">2019</h1>
     </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-10-28T22:12:12+08:00"
+              content="2019-10-28">
+          10-28
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2019/10/28/%E8%AE%B0%E4%B8%80%E6%AC%A1linux%E5%86%85%E6%A0%B8%E8%BD%AF%E6%AD%BB%E9%94%81%E5%88%86%E6%9E%90%E6%80%9D%E8%B7%AF/" itemprop="url">
+            <span itemprop="name">记一次linux内核软死锁分析思路</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
@@ -227,10 +268,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
@@ -241,9 +282,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img class="site-author-image" itemprop="image" alt="John Doe"
+  <img class="site-author-image" itemprop="image" alt="Miracle Fertilizer"
     src="/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">John Doe</p>
+  <p class="site-author-name" itemprop="name">Miracle Fertilizer</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -251,9 +292,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -281,12 +326,12 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Miracle Fertilizer</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.2
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
   </div>
 
         
@@ -312,7 +357,7 @@
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 <script src="/js/next-boot.js"></script>
 
 

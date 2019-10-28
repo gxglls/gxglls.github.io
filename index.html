@@ -20,10 +20,10 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '7.4.2',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -42,18 +42,18 @@
     path: '',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
     },
     sidebarPadding: 40
   };
 </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Miracle Fertilizer&#39;s Blog">
 <meta property="og:url" content="http:&#x2F;&#x2F;www.liwenjing.xn--6qq986b3xl&#x2F;index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Miracle Fertilizer&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>Miracle Fertilizer's Blog</title>
   
 
 
@@ -115,14 +115,15 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Miracle Fertilizer's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+        <p class="site-subtitle">李文静男朋友的博客</p>
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -136,12 +137,32 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>日程表</a>
 
   </li>
   </ul>
@@ -170,21 +191,21 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://www.liwenjing.我爱你/2019/10/27/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://www.liwenjing.我爱你/2019/10/28/%E8%AE%B0%E4%B8%80%E6%AC%A1linux%E5%86%85%E6%A0%B8%E8%BD%AF%E6%AD%BB%E9%94%81%E5%88%86%E6%9E%90%E6%80%9D%E8%B7%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Miracle Fertilizer">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Miracle Fertilizer's Blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/10/27/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2019/10/28/%E8%AE%B0%E4%B8%80%E6%AC%A1linux%E5%86%85%E6%A0%B8%E8%BD%AF%E6%AD%BB%E9%94%81%E5%88%86%E6%9E%90%E6%80%9D%E8%B7%AF/" class="post-title-link" itemprop="url">记一次linux内核软死锁分析思路</a>
         </h1>
 
         <div class="post-meta">
@@ -192,9 +213,10 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="Created: 2019-10-27 00:11:38" itemprop="dateCreated datePublished" datetime="2019-10-27T00:11:38+08:00">2019-10-27</time>
+              <time title="创建时间：2019-10-28 22:12:12 / 修改时间：22:47:01" itemprop="dateCreated datePublished" datetime="2019-10-28T22:12:12+08:00">2019-10-28</time>
             </span>
 
           
@@ -208,20 +230,80 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+          <h4 id="故障分析："><a href="#故障分析：" class="headerlink" title="故障分析："></a>故障分析：</h4><p>  2019/10/25 下午15左右运维收到报警，dvm虚拟机10.29.5.122无法连接，对应业务为dmall-coupon-daemon.  在cmdb查看该vm仍为running状态，运维通过该vm所在的openstack宿主机查看到该vm状态为存活。此时该vm的状态为 能ping通但无法ssh登陆,系统反应缓慢。从监控数据上看到，该vm失联前内存充足，cpu无大波动，心跳戛然而止:</p><p><img src="zabbix%E7%9B%91%E6%8E%A7.png" alt><br>此时运维通过openstack管理界面查看该vm的console输出，有大量kernel log输出如下:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">[2783390.079911] NMI watchdog: BUG: soft lockup - CPU<span class="comment">#0 stuck for 23s[sh:7422]</span></span><br><span class="line">[   28.124720] Modules linked <span class="keyword">in</span>:</span><br><span class="line">[   28.125247] Supported: Yes</span><br><span class="line">[   28.125763] Modules linked <span class="keyword">in</span>:</span><br><span class="line">[   28.126277] Supported: Yes</span><br><span class="line">[   28.126774] </span><br><span class="line">[   28.127264] Pid: 1, comm: init Not tainted 3.0.101-63-xen <span class="comment">#1  </span></span><br><span class="line">[   28.127765] EIP: 0061:[&lt;c00ded0a&gt;] EFLAGS: 00000202 CPU: 0</span><br><span class="line">[   28.128002] EIP is at handle_mm_fault+0x18a/0x2b0</span><br><span class="line">[   28.128002] EAX: 0002bfc1 EBX: 00000000 ECX: 00000000 EDX: 00000000</span><br><span class="line">[   28.128002] ESI: 2bfc1067 EDI: 00000000 EBP: ebfc6200 ESP: ebc35d48</span><br><span class="line">[   28.128002]  DS: 007b ES: 007b FS: 00d8 GS: 0000 SS: e021</span><br><span class="line">[   28.128002] Process init (pid: 1, ti=ebc08000 task=ebc32ce0 task.ti=ebc34000)</span><br><span class="line">[   28.128002] Stack:</span><br><span class="line">[   28.128002]  ebfc1778 ebfc6200 00000029 0002bfc1 00000000 080efc90 ebfc2570 ebfc9e40</span><br><span class="line">[   28.128002]  ec7bd000 ebc35dfc 00000003 ebfc2570 080efc90 c0350ad4 00000029 00000100</span><br><span class="line">[   28.128002]  00000008 00000003 ebfc9e78 ebc32ce0 ebfc9e40 00000000 00000029 00000003</span><br><span class="line">[   28.128002] Call Trace:</span><br><span class="line">[   28.128002]  [&lt;c0350ad4&gt;] do_page_fault+0x1f4/0x4b0</span><br><span class="line">[   28.128002]  [&lt;c034df54&gt;] error_code+0x30/0x38</span><br><span class="line">[   28.128002]  [&lt;c01da35f&gt;] clear_user+0x2f/0x50   </span><br><span class="line">[   28.128002]  [&lt;c01480d4&gt;] load_elf_binary+0xae4/0xc30    </span><br><span class="line">[   28.128002]  [&lt;c01094d1&gt;] search_binary_handler+0x1e1/0x2e0  </span><br><span class="line">[   28.128002]  [&lt;c01097b4&gt;] do_execve_common+0x1e4/0x280   </span><br><span class="line">[   28.128002]  [&lt;c000a9c2&gt;] sys_execve+0x52/0x80   </span><br><span class="line">[   28.128002]  [&lt;c035443e&gt;] ptregs_execve+0x12/0x18    </span><br><span class="line">[   28.128002]  [&lt;c034dc3d&gt;] syscall_call+0x7/0x7   </span><br><span class="line">[   28.128002]  [&lt;c000933f&gt;] kernel_execve+0x1f/0x30    </span><br><span class="line">[   28.128002]  [&lt;c000424e&gt;] init_post+0xde/0x130   </span><br><span class="line">[   28.128002]  [&lt;c057d638&gt;] kernel_init+0x160/0x18f    </span><br><span class="line">[   28.128002]  [&lt;c0354526&gt;] kernel_thread_helper+0x6/0x10  </span><br><span class="line">[   28.128002] Code: 89 f2 89 f8 81 e2 00 f0 ff ff 25 ff 0f 00 00 89 54 24 0c 89 44 24 10 8b 44 24 0c 8b 54 24 10 0f ac d0 0c 89 44 24 0c 8b 44 24 0c &lt;c1&gt; ea 0c 89 54 24 10 c1 e0 05 03 44 24 20 e8 b3 90 ff ff 8b 54 </span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/10/28/%E8%AE%B0%E4%B8%80%E6%AC%A1linux%E5%86%85%E6%A0%B8%E8%BD%AF%E6%AD%BB%E9%94%81%E5%88%86%E6%9E%90%E6%80%9D%E8%B7%AF/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://www.liwenjing.我爱你/2019/10/27/hello-world/">
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Miracle Fertilizer">
+      <meta itemprop="description" content="">
+    </span>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Miracle Fertilizer's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/27/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h1>
 
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-10-27 00:11:38" itemprop="dateCreated datePublished" datetime="2019-10-27T00:11:38+08:00">2019-10-27</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/10/27/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -259,10 +341,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
@@ -273,9 +355,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img class="site-author-image" itemprop="image" alt="John Doe"
+  <img class="site-author-image" itemprop="image" alt="Miracle Fertilizer"
     src="/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">John Doe</p>
+  <p class="site-author-name" itemprop="name">Miracle Fertilizer</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -283,9 +365,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -313,12 +399,12 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Miracle Fertilizer</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.2
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
   </div>
 
         
@@ -344,7 +430,7 @@
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 <script src="/js/next-boot.js"></script>
 
 
